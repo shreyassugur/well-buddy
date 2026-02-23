@@ -6,7 +6,8 @@ import {
     Target,
     Trophy,
     User,
-    LogOut
+    LogOut,
+    MessageSquare
 } from "lucide-react";
 
 // Assuming we might have an auth context to call logout
@@ -22,6 +23,7 @@ const Sidebar = () => {
         { to: "/app/challenges", icon: Target, label: "Challenges" },
         { to: "/app/leaderboard", icon: Trophy, label: "Leaderboard" },
         { to: "/app/profile", icon: User, label: "Profile" },
+        { to: "/app/chat", icon: MessageSquare, label: "AI Chat" },
     ];
 
     return (

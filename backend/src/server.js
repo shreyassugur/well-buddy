@@ -1,5 +1,6 @@
 import express from "express"
 import routes from "./routes/routes.js"
+import chatRoute from "./routes/chat.js"
 import dotenv from "dotenv"
 import connectDB from "./config/db.js"
 import cors from "cors"
@@ -47,6 +48,7 @@ app.use(limiter)
 connectDB()
 
 app.use("/api", routes)
+app.use("/api/chat", chatRoute)
 
 // Global Error Handler
 app.use((err, req, res, next) => {

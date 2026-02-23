@@ -10,6 +10,7 @@ import Workouts from './pages/Workouts.jsx'
 import Challenges from './pages/Challenges.jsx'
 import Leaderboard from './pages/Leaderboard.jsx'
 import Profile from './pages/Profile.jsx'
+import Chat from './pages/Chat.jsx'
 
 import { AuthProvider } from './context/AuthContext'
 import ProtectedRoute from './components/ProtectedRoute'
@@ -38,6 +39,7 @@ function App() {
           <Route path="challenges" element={<Challenges />} />
           <Route path="leaderboard" element={<Leaderboard />} />
           <Route path="profile" element={<Profile />} />
+          <Route path="chat" element={<Chat />} />
         </Route>
 
         {/* Catch all redirect */}
